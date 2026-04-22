@@ -1,0 +1,22 @@
+[package]
+name = "paged-small-vec"
+version = "0.1.0"
+edition = "2024"
+description = "An experimental paged small vector inspired by inode-style direct block storage."
+license = "MIT"
+repository = "https://github.com/borngraced/paged-small-vec"
+readme = "README.md"
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.5"
+smallvec = "1.13"
+
+[[bench]]
+name = "compare"
+harness = false
+
+[[bench]]
+name = "push_u32"
+harness = false
